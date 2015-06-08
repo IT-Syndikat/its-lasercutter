@@ -1,6 +1,7 @@
-==========================
-Marlin 3D Printer to Lasercutter Firmware
-==========================
+# Marlin 3D Printer to Lasercutter Firmware
+
+Maintainer: Mindworker
+
 Marlin has a GPL license because I believe in open development.
 Please do not use this code in products (3D printers, CNC etc) that are closed source or are crippled by a patent.
 
@@ -11,8 +12,8 @@ This is a fork of the Marlin Firmware for Lasercutters.
 Latest added additions:
 G02 & G03 commands are now working
 
-Quick Information
-===================
+## Quick Information
+
 This RepRap firmware is a mashup between <a href="https://github.com/kliment/Sprinter">Sprinter</a>, <a href="https://github.com/simen/grbl/tree">grbl</a> and many original parts.
 
 Derived from Sprinter and Grbl by Erik van der Zalm.
@@ -22,8 +23,7 @@ A fork by bkubicek for the Ultimaker was merged, and further development was aid
 Some features have been added by:
 Lampmaker, Bradley Feldman, and others...
 
-
-Features:
+## Features:
 
 *   Interrupt based movement with real linear acceleration
 *   High steprate
@@ -57,8 +57,7 @@ Features:
 The default baudrate is 250000. This baudrate has less jitter and hence errors than the usual 115200 baud, but is less supported by drivers and host-environments.
 
 
-Differences and additions to the already good Sprinter firmware:
-================================================================
+## Differences and additions to the already good Sprinter firmware:
 
 *Look-ahead:*
 
@@ -136,8 +135,7 @@ necessary for backwards compatibility.
 An interrupt is used to manage ADC conversions, and enforce checking for critical temperatures.
 This leads to less blocking in the heater management routine.
 
-Implemented G Codes:
-====================
+## Implemented G Codes:
 
 *  G0  -> G1
 *  G1  - Coordinated Movement X Y Z E
@@ -228,9 +226,7 @@ M Codes
 *  M928 - Start SD logging (M928 filename.g) - ended by M29
 *  M999 - Restart after being stopped by error
 
-
-Configuring and compilation:
-============================
+## Configuring and compilation:
 
 Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
    http://www.arduino.cc/en/Main/Software
@@ -253,7 +249,3 @@ Click the Upload button
 If all goes well the firmware is uploading
 
 That's ok.  Enjoy Silky Smooth Printing.
-
-
-
-
